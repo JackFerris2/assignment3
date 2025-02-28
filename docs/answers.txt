@@ -1,0 +1,50 @@
+// Went through the GitLab Tutorials on Fri Feb 28th
+// Rough estimate of GitHub account creation Jan 15 2025.
+
+1. Console output from step 3.C :
+
+jackferris@MacBookAir assignment3 % git status       
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   docs/answers.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+2. Total commits in the repository:
+ - Used command: 'git rev-list --count HEAD'
+ - 9
+
+3. Last modification date of README.md:
+
+ - Used command: 'git log -1 --format=%cd -- README.md'
+ - Fri Feb 28 14:34:21 2025 -0500
+
+4. Two reasons branches are used:
+ - Develop new features without affecting the main branch.
+ - Allow multiple developers to work on different features at the same time.
+
+5. Difference between 'git log' and 'git status':
+ - 'git log' shows commit history
+ - 'git status' shows the current state of working directory.
+
+6. Find commits where "Vehicle.h" was changed:
+ - command used 'git log --oneline -- Vehicle.h'
+
+7. Find commits with "file" in the message:
+ - Command: 'git log --grep="file"'
+
+8. OOP concepts
+ -Inheritence: Allows one class to inherit the properties of another.
+ -Polymorphism: Enables a function to take different forms based on input
+ -Encapsulation: Restricts direct acess to object data for security
+
+9. Difference between "Dictator and Lieutenants" and "Integration manager" workflow:
+ - In "Dictator and Lieutenants", the dicator has the final authority over the merges, while in integration manager the manager reviews and integrates changes.
+
+10. Benefits of Dictator and Lieutenants for a large team:
+ - Ensures better code review and structered merging process.
+ - Reduces conflicts in large-scale collaborative projects.
